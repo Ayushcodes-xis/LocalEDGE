@@ -1,0 +1,285 @@
+/**
+ * LocalEdge India - Responsive & Layout System
+ * File: 05. css/responsive.css
+ * Description: Mobile-first media queries, grid structures, and canonical patterns.
+ */
+
+/* ==========================================================================
+   MOBILE-FIRST DEFAULTS (< 640px)
+   ========================================================================== */
+
+/* Reduce base section padding for mobile */
+section {
+  padding-block: calc(var(--space-xl) * 0.75); /* ~72px */
+}
+
+.section-feature {
+  padding-block: calc((var(--space-xl) + var(--space-md)) * 0.75); /* ~96px */
+}
+
+/* Button Stacking */
+.btn-row {
+  flex-direction: column;
+  width: 100%;
+}
+
+.btn-primary, .btn-ghost {
+  width: 100%;
+}
+
+/* Typography Adjustments */
+.testimonial-quote {
+  font-size: var(--text-h3);
+}
+
+/* Footer mobile stack */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+/* Hero & Pattern A Base */
+.hero-image-wrapper {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.metric-card {
+  position: static;
+  margin-top: -1.5rem;
+  margin-inline: 1.5rem;
+  z-index: 2;
+}
+
+/* Process Grid Mobile */
+.process-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Connecting line on left edge for mobile */
+.process-grid::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 0;
+  width: 1px;
+  background-color: var(--color-border);
+}
+
+/* Services mobile swap - inline images visible, right column hidden */
+.services-image-stack {
+  display: none;
+}
+
+.service-item-mobile-img {
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 2px;
+}
+
+/* Base Canonical Grids (Single Column) */
+.pattern-a, .pattern-a-r, .pattern-b-header, .pattern-b-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.pattern-a-r {
+  /* Ensure image stacks above text on mobile even in reverse */
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.pattern-c {
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+/* ==========================================================================
+   SMALL DEVICES (sm: >= 640px)
+   ========================================================================== */
+@media (min-width: 640px) {
+  
+  .btn-row {
+    flex-direction: row;
+    width: auto;
+  }
+  
+  .btn-primary, .btn-ghost {
+    width: auto;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Allow trust row to stay inline if it fits */
+  .trust-row {
+    white-space: normal;
+  }
+}
+
+/* ==========================================================================
+   TABLETS (md: >= 768px)
+   ========================================================================== */
+@media (min-width: 768px) {
+
+  /* Container padding increases */
+  .container {
+    padding-inline: 3rem;
+  }
+
+  /* Reset section padding from mobile reduction */
+  section {
+    padding-block: var(--space-xl);
+  }
+
+  .section-feature {
+    padding-block: calc(var(--space-xl) + var(--space-md));
+  }
+
+  /* Navbar transitions to desktop layout */
+  .hamburger {
+    display: none;
+  }
+
+  .nav__links {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+  }
+
+  .nav__cta {
+    display: block;
+  }
+
+  .nav__container {
+    padding-inline: 0; /* Container handles padding */
+  }
+
+  /* Grid Layouts - Tablet defaults */
+  .pattern-a, .pattern-a-r {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50/50 split */
+    align-items: center;
+    gap: clamp(3rem, 6vw, 6rem);
+  }
+
+  .pattern-b-header {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+  }
+
+  .pattern-b-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+  }
+
+  .hero-image-wrapper {
+    aspect-ratio: 4 / 5;
+  }
+
+  .metric-card {
+    position: absolute;
+    bottom: 2rem;
+    left: -2rem;
+    margin: 0;
+  }
+
+  /* Process steps become horizontal */
+  .process-grid {
+    flex-direction: row;
+    padding-left: 0;
+    gap: var(--space-md);
+  }
+
+  .process-step {
+    flex: 1;
+  }
+
+  /* Horizontal connecting line */
+  .process-grid::before {
+    top: 2rem; /* Midpoint of the step numbers */
+    left: 2rem;
+    right: 2rem;
+    bottom: auto;
+    width: auto;
+    height: 1px;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP (lg: >= 1024px)
+   ========================================================================== */
+@media (min-width: 1024px) {
+
+  /* Refine Canonical Grids */
+  .pattern-a {
+    grid-template-columns: 6fr 4fr; /* 60/40 split */
+  }
+
+  .pattern-a-r {
+    grid-template-columns: 4fr 6fr; /* 40/60 split reversed */
+  }
+
+  .pattern-b-header {
+    grid-template-columns: 7fr 5fr;
+  }
+
+  .pattern-b-grid {
+    grid-template-columns: 5fr 7fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 3fr 2fr 2fr 3fr;
+  }
+
+  /* Service Swap UI becomes active */
+  .services-image-stack {
+    display: block;
+  }
+
+  .service-item-mobile-img {
+    display: none;
+  }
+
+  .service-item:hover {
+    border-left: 2px solid var(--color-accent);
+    padding-left: calc(var(--space-sm) - 2px);
+    transition: all 0.3s ease;
+  }
+}
+
+/* ==========================================================================
+   LARGE DESKTOP (xl: >= 1280px)
+   ========================================================================== */
+@media (min-width: 1280px) {
+
+  section {
+    padding-block: var(--space-2xl); /* 10rem / 160px */
+  }
+
+  .section-feature {
+    padding-block: calc(var(--space-2xl) + var(--space-md));
+  }
+
+  /* Tighten letter spacing on massive displays for elegance */
+  h1, h2 {
+    letter-spacing: -0.025em;
+  }
+  
+  .pattern-a, .pattern-a-r {
+    gap: var(--space-xl);
+  }
+    }
+    
