@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" data-page="about">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  
+  <title>About Us | LocalEdge India</title>
+  <meta name="description" content="Meet Ayushman Paswan and the LocalEdge India team. A strategic digital agency built to serve local businesses across Delhi with honesty and craft.">
+  
+  <meta property="og:title" content="About Us | LocalEdge India">
+  <meta property="og:description" content="Meet Ayushman Paswan and the LocalEdge India team. A strategic digital agency built to serve local businesses across Delhi with honesty and craft.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://localedgeindia.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="canonical" href="https://localedgeindia.com/about.html">
+  
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500;600&display=swap&text=LocalEdgeIndiaStartProjectViewOurWork1234567890" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN (Utility Scaffold) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- CSS Design System -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="antialiased text-base">
+  
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav__container">
+      <a href="index.html" class="nav__logo" aria-label="LocalEdge India — Home">LocalEdge</a>
+      
+      <nav class="nav__links" aria-label="Main Navigation">
+        <a href="about.html" class="nav__link is-active" aria-current="page">About</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="work.html" class="nav__link">Work</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="contact.html" class="btn-primary">Start a Project</a>
+      </div>
+
+      <button class="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle mobile menu">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="menu-overlay" id="mobile-menu">
+    <nav class="flex flex-col gap-6" aria-label="Mobile Navigation">
+      <a href="index.html" class="menu-nav__item text-4xl font-display text-[var(--color-text-primary)]" style="--stagger-index: 1;">Home</a>
+      <a href="about.html" class="menu-nav__item text-4xl font-display text-[var(--color-text-primary)]" style="--stagger-index: 2;">About</a>
+      <a href="services.html" class="menu-nav__item text-4xl font-display text-[var(--color-text-primary)]" style="--stagger-index: 3;">Services</a>
+      <a href="work.html" class="menu-nav__item text-4xl font-display text-[var(--color-text-primary)]" style="--stagger-index: 4;">Work</a>
+      <a href="contact.html" class="menu-nav__item text-4xl font-display text-[var(--color-text-primary)]" style="--stagger-index: 5;">Contact</a>
+    </nav>
+    <div class="menu-bottom mt-12 flex flex-col gap-4">
+      <a href="https://wa.me/917643870405" target="_blank" rel="noopener noreferrer" class="btn-primary w-fit text-sm">WhatsApp Us <span class="sr-only">(opens in new tab)</span></a>
+      <a href="https://www.instagram.com/localedgeindian" target="_blank" rel="noopener noreferrer" class="text-sm tracking-widest uppercase text-[var(--color-text-secondary)]">@localedgeindian <span class="sr-only">(opens in new tab)</span></a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- SECTION 1: ABOUT HERO -->
+    <section id="about-hero" class="section-feature">
+      <div class="container pattern-a">
+        <div class="flex flex-col justify-center gap-8">
+          <div class="section-header !mb-0 js-reveal">
+            <span class="eyebrow">— Our Story</span>
+            <h1 class="text-[length:var(--text-h1)] text-[var(--color-text-primary)] font-display leading-[1.1] tracking-tight">Built in Delhi.<br>Focused on Results.</h1>
+          </div>
+          
+          <div class="text-[length:var(--text-body-lg)] text-[var(--color-text-secondary)] max-w-[480px] js-reveal space-y-4">
+            <p>
+              We saw too many hard-working business owners in Delhi getting burned by empty agency promises and vanity metrics.
+            </p>
+            <p>
+              LocalEdge was started to provide clear, strategic digital growth built on trust, honesty, and actual return on investment.
+            </p>
+          </div>
+        </div>
+        
+        <div class="relative w-full h-full">
+          <figure class="hero-image-wrapper js-image-reveal overflow-hidden relative aspect-4-5">
+            <img 
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=1000&fit=crop&q=85&auto=format&fm=webp" 
+              alt="Ayushman Paswan working intently at his desk" 
+              class="js-image-reveal__inner img-cover"
+              loading="eager"
+              fetchpriority="high"
+              width="800"
+              height="1000"
+            >
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MISSION -->
+    <section id="mission" class="bg-[var(--color-surface-primary)] border-t-[2px] border-[var(--color-accent)]">
+      <div class="container pattern-c js-reveal">
+        <p class="font-display text-[length:var(--text-h2)] text-[var(--color-text-primary)] leading-[1.4]">
+          We believe that the best businesses in Delhi shouldn't be hidden on page three of Google or settling for outdated websites. Our mission is to bridge the gap between your real-world local expertise and the digital presence required to dominate your market.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: VALUES -->
+    <section id="values" class="bg-[var(--color-surface-card)]">
+      <div class="container">
+        <div class="section-header js-reveal">
+          <h2 class="text-[length:var(--text-h2)]">What We Stand For</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 js-reveal">
+          
+          <div class="card">
+            <span class="font-display text-[2.5rem] text-[var(--color-border)] mb-4 block leading-none">01</span>
+            <h3 class="font-body font-semibold text-[1.125rem] text-[var(--color-text-primary)] mb-2">Honesty</h3>
+            <p class="font-body font-normal text-[0.9375rem] text-[var(--color-text-secondary)] leading-[1.7]">
+              No vanity metrics or inflated reports. We tell you exactly what's working, what isn't, and how we are going to fix it. Complete transparency from day one.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="font-display text-[2.5rem] text-[var(--color-border)] mb-4 block leading-none">02</span>
+            <h3 class="font-body font-semibold text-[1.125rem] text-[var(--color-text-primary)] mb-2">Craft</h3>
+            <p class="font-body font-normal text-[0.9375rem] text-[var(--color-text-secondary)] leading-[1.7]">
+              We don't do templates or half-measures. Every website, brand identity, and campaign is custom-engineered specifically for your unique business goals.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="font-display text-[2.5rem] text-[var(--color-border)] mb-4 block leading-none">03</span>
+            <h3 class="font-body font-semibold text-[1.125rem] text-[var(--color-text-primary)] mb-2">Accountability</h3>
+            <p class="font-body font-normal text-[0.9375rem] text-[var(--color-text-secondary)] leading-[1.7]">
+              We treat your marketing budget like our own. If a strategy doesn't directly contribute to your bottom line and footfall, we simply don't execute it.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="font-display text-[2.5rem] text-[var(--color-border)] mb-4 block leading-none">04</span>
+            <h3 class="font-body font-semibold text-[1.125rem] text-[var(--color-text-primary)] mb-2">Growth</h3>
+            <p class="font-body font-normal text-[0.9375rem] text-[var(--color-text-secondary)] leading-[1.7]">
+              A pretty website is useless if it doesn't bring in customers. Everything we build is fundamentally designed to generate qualified local leads and revenue.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FOUNDER -->
+    <section id="founder">
+      <div class="container pattern-a-r">
+        
+        <div class="relative w-full h-full js-reveal">
+          <figure class="hero-image-wrapper overflow-hidden relative aspect-4-5">
+            <img 
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=1000&fit=crop&q=85&auto=format&fm=webp" 
+              alt="Ayushman Paswan collaborating with the agency team" 
+              class="img-cover"
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="1000"
+            >
+          </figure>
+        </div>
+
+        <div class="flex flex-col justify-center gap-6 md:pr-12">
+          <div class="section-header !mb-0 js-reveal">
+            <span class="eyebrow">— The Founder</span>
+            <h2 class="text-[length:var(--text-h2)]">Ayushman Paswan</h2>
+          </div>
+          
+          <div class="space-y-4 text-[length:var(--text-body)] text-[var(--color-text-secondary)] js-reveal">
+            <p>
+              "Growing up in Delhi, I've always admired the resilience and drive of our local business community. But I also saw how many of these incredible businesses were struggling to translate their real-world quality into a digital presence that actually attracted customers."
+            </p>
+            <p>
+              "I started LocalEdge because I wanted to change that. I wanted to build an agency that didn't just sell services, but actually partnered with business owners to build sustainable growth systems. We skip the corporate jargon and focus purely on strategic work that brings in footfall and revenue."
+            </p>
+          </div>
+          
+          <div class="mt-4 js-reveal flex flex-col items-start gap-4">
+            <p class="text-sm font-medium text-[var(--color-text-primary)]">You can reach Ayushman directly on WhatsApp.</p>
+            <a href="https://wa.me/917643870405" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+              Message the Founder <span class="sr-only">(opens in new tab)</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: WHY LOCALEDGE -->
+    <section id="why-us" class="border-t border-[var(--color-border)]">
+      <div class="container flex flex-col gap-24 md:gap-32">
+        
+        <!-- Row 1 -->
+        <div class="pattern-a items-center">
+          <div class="js-reveal">
+            <span class="eyebrow">— Unmatched Focus</span>
+            <h3 class="text-[length:var(--text-h2)] font-display text-[var(--color-text-primary)] mt-4 mb-6 leading-[1.2]">We Only Work With Local Businesses</h3>
+            <p class="text-[length:var(--text-body)] text-[var(--color-text-secondary)] mb-6">
+              Unlike generalized agencies, we specialize entirely in local search, footfall generation, and regional brand dominance. We know exactly how Delhi consumers search and buy.
+            </p>
+            <ul class="flex flex-col gap-3">
+              <li class="flex items-start gap-2 text-[0.9375rem] text-[var(--color-text-secondary)]">
+                <span class="text-[var(--color-accent)]">—</span> Hyper-local SEO strategies
+              </li>
+              <li class="flex items-start gap-2 text-[0.9375rem] text-[var(--color-text-secondary)]">
+                <span class="text-[var(--color-accent)]">—</span> Google Map Pack optimization
+              </li>
+              <li class="flex items-start gap-2 text-[0.9375rem] text-[var(--color-text-secondary)]">
+                <span class="text-[var(--color-accent)]">—</span> Regional consumer ad targeting
+              </li>
+            </ul>
+          </div>
+          <div class="stat-block md:justify-self-center js-reveal">
+            <div class="stat-item">
+              <span class="stat-item__number">47+</span>
+              <span class="stat-item__label">Local Brands Built</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="pattern-a-r items-center">
+          <div class="stat-block md:justify-self-center js-reveal hidden md:flex">
+            <div class="stat-item">
+              <span class="stat-item__number">100%</span>
+              <span class="stat-item__label">Transparent Reporting</span>
+            </div>
+          </div>
+          <div class="js-reveal">
+            <span class="eyebrow">— Complete Transparency</span>
+            <h3 class="text-[length:var(--text-h2)] font-display text-[var(--color-text-primary)] mt-4 mb-6 leading-[1.2]">No Hidden Retainers or Jargon</h3>
+            <p class="text-[length:var(--text-body)] text-[var(--color-text-secondary)] mb-6">
+              You will always know exactly where your investment is going. We provide clear, plain-English reporting tied directly to the leads, bookings, and sales we generate.
+            </p>
+            <ul class="flex flex-col gap-3">
+              <li class="flex items-start gap-2 text-[0.9375rem] text-[var(--color-text-secondary)]">
+                <span class="text-[var(--color-accent)]">—</span> Direct ROI tracking
+              </li>
+              <li class="flex items-start gap-2 text-[0.9375rem] text-[var(--color-text-secondary)]">
+                <span class="text-[var(--color-accent)]">—</span> Monthly strategy check-ins
+              </li>
+              <li class="flex items-start gap-2 text-[0.9375rem] text-[var(--color-text-secondary)]">
+                <span class="text-[var(--color-accent)]">—</span> Clear metric dashboards
+              </li>
+            </ul>
+          </div>
+          <!-- Mobile fallback for stat block ordering -->
+          <div class="stat-block js-reveal md:hidden mt-8">
+            <div class="stat-item">
+              <span class="stat-item__number">100%</span>
+              <span class="stat-item__label">Transparent Reporting</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="pattern-a items-center">
+          <div class="js-reveal">
+            <span class="eyebrow">— End-to-End Ownership</span>
+            <h3 class="text-[length:var(--text-h2)] font-display text-[var(--color-text-primary)] mt-4 mb-6 leading-[1.2]">We Build It, We Run It, You Grow</h3>
+            <p class="text-[length:var(--text-body)] text-[var(--color-text-secondary)] mb-6">
+              You shouldn't have to manage a web designer, an SEO guy, and a social media manager. We handle your entire digital ecosystem under one cohesive roof.
+            </p>
+            <ul class="flex flex-col gap-3">
+              <li class="flex items-start gap-2 text-[0.9375rem] text-[var(--color-text-secondary)]">
+                <span class="text-[var(--color-accent)]">—</span> Unified brand voice
+              </li>
+              <li class="flex items-start gap-2 text-[0.9375rem] text-[var(--color-text-secondary)]">
+                <span class="text-[var(--color-accent)]">—</span> Seamless tech integration
+              </li>
+              <li class="flex items-start gap-2 text-[0.9375rem] text-[var(--color-text-secondary)]">
+                <span class="text-[var(--color-accent)]">—</span> Single point of contact
+              </li>
+            </ul>
+          </div>
+          <div class="stat-block md:justify-self-center js-reveal">
+            <div class="stat-item">
+              <span class="stat-item__number">3.2x</span>
+              <span class="stat-item__label">Average Revenue Growth</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: CTA BANNER -->
+    <section id="cta-banner" class="bg-[var(--color-accent)] py-24">
+      <div class="container pattern-c js-reveal">
+        <h2 class="text-[length:var(--text-h2)] text-[var(--color-surface-dark)] font-display mb-4">Ready to grow your business in Delhi?</h2>
+        <p class="text-[length:var(--text-body-lg)] text-[var(--color-surface-dark)] opacity-80 mb-8 max-w-[500px] mx-auto">
+          Skip the guesswork. Partner with an agency that understands local market dynamics and builds systems that predictably drive revenue.
+        </p>
+        <div class="btn-row justify-center">
+          <a href="contact.html" class="btn-primary btn-primary--dark">Start a Project</a>
+          <a href="work.html" class="btn-ghost !border-[var(--color-surface-dark)] !text-[var(--color-surface-dark)] hover:!bg-[var(--color-surface-dark)] hover:!text-[var(--color-accent)]">See Our Work</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="bg-[var(--color-surface-dark)] pt-24 pb-8">
+    <div class="container">
+      <div class="footer-grid js-reveal">
+        <!-- Col 1 -->
+        <div class="flex flex-col gap-6">
+          <span class="font-display text-xl text-[var(--color-text-inverse)] font-medium">LocalEdge</span>
+          <p class="text-sm text-[var(--color-text-secondary)]">Strategic digital growth and brand development for Indian local businesses.</p>
+          <div class="flex items-center gap-4">
+            <a href="https://www.instagram.com/localedgeindian" target="_blank" rel="noopener noreferrer" class="text-[var(--color-text-inverse)] hover:text-[var(--color-accent)] transition-colors" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://wa.me/917643870405" target="_blank" rel="noopener noreferrer" class="text-[var(--color-text-inverse)] hover:text-[var(--color-accent)] transition-colors" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h3 class="text-xs font-medium uppercase tracking-[0.1em] text-[var(--color-accent)] mb-6">Navigation</h3>
+          <ul class="flex flex-col gap-4">
+            <li><a href="about.html" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">About Us</a></li>
+            <li><a href="work.html" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">Case Studies</a></li>
+            <li><a href="contact.html#faq" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">FAQs</a></li>
+            <li><a href="contact.html" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div>
+          <h3 class="text-xs font-medium uppercase tracking-[0.1em] text-[var(--color-accent)] mb-6">Services</h3>
+          <ul class="flex flex-col gap-4">
+            <li><a href="services.html#service-website-design" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">Website Design</a></li>
+            <li><a href="services.html#service-local-seo" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">Local SEO</a></li>
+            <li><a href="services.html#service-instagram-branding" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">Instagram Branding</a></li>
+            <li><a href="services.html#service-whatsapp-automation" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">WhatsApp Automation</a></li>
+            <li><a href="services.html#service-lead-generation" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">Lead Generation</a></li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div>
+          <h3 class="text-xs font-medium uppercase tracking-[0.1em] text-[var(--color-accent)] mb-6">Get in Touch</h3>
+          <ul class="flex flex-col gap-4">
+            <li><a href="mailto:localedgeindia@gmail.com" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">localedgeindia@gmail.com</a></li>
+            <li><a href="tel:+917643870405" class="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-inverse)] transition-colors">+91 7643870405</a></li>
+            <li class="text-sm text-[var(--color-text-secondary)] mt-2">Dilshad Garden, Delhi, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 border-t border-[#2a2a2a] mt-16 pt-8 js-reveal">
+        <p class="text-xs text-[var(--color-text-secondary)]">&copy; 2026 LocalEdge India</p>
+        <p class="text-xs text-[var(--color-text-secondary)]">Built for Indian businesses.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- CDN Libraries -->
+  <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  
+  <!-- Custom JS Modules -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/smooth-scroll.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+  </html>
