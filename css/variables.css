@@ -1,0 +1,83 @@
+/**
+ * LocalEdge India - Master Token Set
+ * File: 01. css/variables.css
+ * Description: CSS Custom Properties defining the design system constraints.
+ */
+
+:root {
+  /* ==========================================================================
+     BASE PREFERENCES
+     ========================================================================== */
+  
+  /* Enforce light mode to prevent OS/browser dark-mode interference */
+  color-scheme: light;
+
+  /* ==========================================================================
+     COLOR SYSTEM (Semantic Role Mapping)
+     ========================================================================== */
+  
+  --color-surface-primary: #FDFBF7; /* Page background */
+  --color-surface-dark:    #111111; /* Footer, dark CTA blocks, specific heroes */
+  --color-surface-card:    #F5F1EB; /* Cards, inset areas */
+  
+  --color-text-primary:    #1A1A1A; /* Headlines, navigation */
+  --color-text-secondary:  #707070; /* Body, captions */
+  --color-text-inverse:    #F5F5F5; /* Text on dark backgrounds */
+  
+  --color-border:          #E7E2D9; /* Dividers, structural lines */
+  
+  /* Accent restricted strictly to CTAs, active nav, metrics, eyebrows */
+  --color-accent:          #C5A880; 
+  --color-accent-hover:    #B08D65; 
+
+  /* ==========================================================================
+     TYPOGRAPHY
+     ========================================================================== */
+  
+  /* Font Families */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Fluid Type Scale (clamp: min, preferred, max) */
+  --text-display: clamp(3rem, 6vw, 5.5rem);      /* Hero H1 */
+  --text-h1:      clamp(2.25rem, 4vw, 3.75rem);  /* Page titles */
+  --text-h2:      clamp(1.75rem, 3vw, 2.75rem);  /* Section H2 */
+  --text-h3:      clamp(1.25rem, 2vw, 1.75rem);  /* Card titles */
+  
+  /* Static Type Scale */
+  --text-body-lg: 1.125rem;                      /* Lead copy */
+  --text-body:    1rem;                          /* Standard body */
+  --text-sm:      0.875rem;                      /* Captions, UI text */
+  --text-xs:      0.75rem;                       /* Tags, eyebrows, metadata */
+
+  /* ==========================================================================
+     SPACING SYSTEM
+     ========================================================================== */
+  
+  --space-xs:  0.5rem;  /* 8px   */
+  --space-sm:  1rem;    /* 16px  */
+  --space-md:  2rem;    /* 32px  */
+  --space-lg:  4rem;    /* 64px  */
+  --space-xl:  6rem;    /* 96px  */
+  --space-2xl: 10rem;   /* 160px */
+
+  /* ==========================================================================
+     Z-INDEX LAYER MAP
+     ========================================================================== */
+  
+  --z-base:    0;
+  --z-raised:  10;      /* Cards on hover */
+  --z-sticky:  50;      /* Sticky elements */
+  --z-navbar:  100;     /* Fixed navigation */
+  --z-overlay: 150;     /* Page overlays, hover overlays */
+  --z-menu:    200;     /* Mobile menu overlay */
+  --z-modal:   300;     /* Modals */
+
+  /* ==========================================================================
+     ANIMATION & MOTION
+     ========================================================================== */
+  
+  /* Master Easing - Applied to all UI transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
