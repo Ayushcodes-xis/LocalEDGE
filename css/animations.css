@@ -1,0 +1,133 @@
+/**
+ * LocalEdge India - Animation System
+ * File: 04. css/animations.css
+ * Description: Initial states for scroll reveals, image wipes, and transition utilities.
+ */
+
+/* ==========================================================================
+   MOTION ACCESSIBILITY (Non-negotiable)
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .lenis {
+    scroll-behavior: auto !important;
+  }
+
+  /* Reset hidden states so content is visible without animation */
+  .js-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .js-image-reveal__inner {
+    transform: none !important;
+    clip-path: none !important;
+  }
+}
+
+/* ==========================================================================
+   SCROLL REVEAL INITIAL STATES (.js-reveal)
+   ========================================================================== */
+
+/* 
+ * Applied to section headers, paragraphs, cards, and CTA blocks.
+ * GSAP will animate these to opacity: 1 and translateY(0).
+ * Initial state set in CSS to prevent FOUC (Flash of Unstyled Content).
+ */
+.js-reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  /* GSAP handles the transition, no CSS transition property here */
+}
+
+/* ==========================================================================
+   IMAGE WIPE REVEAL (.js-image-reveal)
+   ========================================================================== */
+
+.js-image-reveal {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.js-image-reveal__inner {
+  transform: scale(1.08);
+  clip-path: inset(100% 0 0 0);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform, clip-path;
+  /* GSAP fromTo handles the 1.2s duration and easing simultaneously */
+}
+
+/* ==========================================================================
+   SERVICE IMAGE SWAP (Desktop Services Section)
+   ========================================================================== */
+
+.services-image-stack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.services-image-stack img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+/* First image is visible by default */
+.services-image-stack img:first-child {
+  opacity: 1;
+  position: relative; /* Gives the stack a baseline height */
+}
+
+/* Active class applied via JS on hover */
+.services-image-stack img.service-image--active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   MOBILE MENU STAGGER ANIMATION
+   ========================================================================== */
+
+.menu-nav__item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s var(--ease-out-expo), 
+              transform 0.4s var(--ease-out-expo);
+  /* --stagger-index is set in HTML inline style */
+  transition-delay: calc(var(--stagger-index, 0) * 0.05s);
+  will-change: transform, opacity;
+}
+
+.menu-open .menu-nav__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bottom social/contact info in menu */
+.menu-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s var(--ease-out-expo), 
+              transform 0.4s var(--ease-out-expo);
+  transition-delay: 0.4s; /* Triggers after main links */
+}
+
+.menu-open .menu-bottom {
+  opacity: 1;
+  transform: translateY(0);
+    }
